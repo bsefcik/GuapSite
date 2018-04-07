@@ -2,15 +2,15 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 
 
-import {AppComponent} from './app.component';
+import {App} from './app';
 import {RouterModule} from '@angular/router';
-import {appRoutes} from './routes';
+import {appRoutes} from '../routes/routes';
 import {GsHomePage} from '../components/homepage/homepage';
 
 
 @NgModule({
   declarations: [
-    AppComponent,
+    App,
     GsHomePage
   ],
   imports: [
@@ -18,6 +18,6 @@ import {GsHomePage} from '../components/homepage/homepage';
     RouterModule.forRoot(appRoutes)
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [App]
 })
 export class AppModule { }
