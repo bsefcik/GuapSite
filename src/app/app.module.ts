@@ -1,20 +1,18 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
-
-
 import {App} from './app';
 import {RouterModule} from '@angular/router';
 import {appRoutes} from '../routes/routes';
-import {GsHomePage} from '../components/homepage/homepage';
+import {ComponentModule} from '../components/component-module';
 
 
 @NgModule({
   declarations: [
-    App,
-    GsHomePage
+    App
   ],
   imports: [
     BrowserModule,
+    ComponentModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [],
