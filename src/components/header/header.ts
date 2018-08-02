@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'gs-header',
@@ -7,8 +7,10 @@ import {Component} from '@angular/core';
 })
 export class GsHeader {
   public showNavModal = false;
+  public navIsShowing = new EventEmitter(false);
 
   public toggleNavModal(): void {
     this.showNavModal = !this.showNavModal;
+    this.navIsShowing.emit(this.showNavModal);
   }
 }
