@@ -5,4 +5,10 @@ import {Component} from '@angular/core';
   templateUrl: './header.html',
   styleUrls: ['./header.scss']
 })
-export class GsHeader {}
+export class GsHeader {
+  public showNavModal = false;
+
+  public toggleNavModal(): void {
+    this.showNavModal = !this.showNavModal;
+  }
+}
