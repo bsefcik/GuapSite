@@ -8,4 +8,8 @@ import {AfterViewInit, Component, OnInit} from '@angular/core';
 export class GsHomePage {
   public showEntrance = true;
   constructor() {}
+
+  clickPlayButton() {
+    this.showEntrance = false;
+  }
 }

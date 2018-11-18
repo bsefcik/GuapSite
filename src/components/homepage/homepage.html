@@ -1,5 +1,11 @@
+<!--Play button-->
 <div *ngIf="showEntrance" class="circle">
-  <span class="enter">ENTER</span>
+  <a (click)="clickPlayButton()" class="enter">Play</a>
 </div>
+<!--Menu Select-->
+<a  *ngIf="!showEntrance" class="pick-category m-btn">Pick a category</a>
+<a  *ngIf="!showEntrance" class="random-category m-btn">Random category</a>
+<a  *ngIf="!showEntrance" class="your-scores m-btn">Your scores</a>
+<a  *ngIf="!showEntrance" class="coming-soon m-btn">Upcoming features</a>
 <!--Background-->
 <div class="background"></div>

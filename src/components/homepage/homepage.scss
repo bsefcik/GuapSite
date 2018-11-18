@@ -18,6 +18,8 @@
     -ms-filter: blur(2px);
     filter: blur(2px);
   }
+
+  // Play Button
   .circle {
     background: white;
     position: absolute;
@@ -36,6 +38,40 @@
       font-size: 13vw;
       font-family: monospace;
     }
+  }
+
+  // Menu buttons
+  .m-btn {
+    background-color: white;
+    font-size: 5.5vw;
+    font-family: monospace;
+    border-radius: 40vw;
+    left: 20vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 60vw;
+    margin: 0 auto;
+    z-index: 10;
+    position: absolute;
+  }
+
+  .pick-category {
+    top: 16.8vh;
+  }
+
+  .random-category {
+    top: 37.6vh;
+  }
+
+  .your-scores {
+    top: 58.4vh;
+  }
+
+  .coming-soon {
+    top: 79.2vh;
   }
 
   @media(min-width: 500px) {
