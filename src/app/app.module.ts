@@ -4,6 +4,7 @@ import {App} from './app';
 import {RouterModule} from '@angular/router';
 import {appRoutes} from '../routes/routes';
 import {ComponentModule} from '../components/component-module';
+import {AppStateService} from '../services/app-state.service';
 
 
 @NgModule({
@@ -15,7 +16,7 @@ import {ComponentModule} from '../components/component-module';
     ComponentModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [AppStateService],
   bootstrap: [App]
 })
 export class AppModule { }

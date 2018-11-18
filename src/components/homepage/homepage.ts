@@ -1,4 +1,5 @@
 import {AfterViewInit, Component, OnInit} from '@angular/core';
+import {AppStateService} from '../../services/app-state.service';
 
 @Component({
   selector: 'gs-homepage',
@@ -7,7 +8,7 @@ import {AfterViewInit, Component, OnInit} from '@angular/core';
 })
 export class GsHomePage {
   public showEntrance = true;
-  constructor() {}
+  constructor(appStateService: AppStateService) {}
 
   clickPlayButton() {
     this.showEntrance = false;
